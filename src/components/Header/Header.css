@@ -11,8 +11,8 @@ header {
 .nav-icons {
     display: flex;
     align-items: center;
-    gap: 50%;
-    margin-right: 10%;
+    gap: 16px;
+
 }
 
 .img-logo {
@@ -30,23 +30,21 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 8px;
+    padding: 18px;
     display: flex;
     align-items: center;
 }
 
-
-
-.menu-section a {
-    display: block;
-    color: inherit;
-    padding: 3% 0;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-style: normal;
-    border-bottom: 2px solid #3b3b3b;
-    padding: 10% 0;
+.nav-search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 18px;
 }
+
+/* Элементы выпадающего списка */
 
 .menu-overlay {
     position: fixed;
@@ -69,15 +67,14 @@ header {
 .dropdown-menu {
     position: fixed;
     right: 0;
-    top: 0;
+    top: 111px;
     width: 40%;
     max-width: 300px;
-    height: 100vh;
+    height: calc(100vh - 111px);
     background: white;
     padding: 30px;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     z-index: 2; 
-    top: 111px;
     transform: translateX(100%);
     transition: transform .3s ease;
 }
@@ -85,6 +82,74 @@ header {
 .dropdown-menu.open {
     transform: translateX(0);
 }
+
+.menu-section a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-style: normal;
+    border-bottom: 2px solid #3b3b3b;
+    padding: 10% 0;
+}
+
+
+/* Элементы поиска */
+
+.search-section {
+    display: block;
+    position: fixed;
+    top: 111px;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    padding: 10px;
+    z-index: 2;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.search-section.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.text-area {
+    border: none;
+    width: 100%;
+    appearance: none;
+    outline: none;
+    color: rgb(71, 71, 71);  
+    font-size: 1rem;
+    padding-right: 40px; 
+    box-sizing: border-box;
+}
+
+/* убираю встроенный крестик для очистки */
+.text-area[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); /* Точное центрирование */
+}
+
+.img-icons-small {
+    width: 1rem;
+    height: auto;
+}
+
 
 
 
