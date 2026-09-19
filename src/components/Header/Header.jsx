@@ -40,30 +40,30 @@ export default function Header() {
     return (
         <header>
             <a href='/MainPage'>
-                <img className='img-logo' src='/android-chrome-192x192.png' alt='bit-game' />
+                <img className='img-logo' src={`${import.meta.env.BASE_URL}android-chrome-192x192.png`} alt='bit-game' />
             </a>
 
             <nav className='nav-icons'>
                 <button className='menu-button' onClick={toggleMenu}>
-                    <img className='img-icons' src='/align-justify_25181.png' alt='menu' />
+                    <img className='img-icons' src={`${import.meta.env.BASE_URL}align-justify_25181.png`} alt='menu' />
                 </button>
                 <button className='nav-search-button' onClick={toggleSearch}>
-                    <img className='img-icons' src='/search.png' alt='search' />
+                    <img className='img-icons' src={`${import.meta.env.BASE_URL}search.png`} alt='search' />
                 </button>
             </nav>
 
             <div className={`menu-overlay ${isMenuClicked ? 'open' : ''}`} onClick={closeMenu}></div>
             <nav className={`dropdown-menu ${isMenuClicked ? 'open' : ''}`}>
                 <div className='menu-section'>
-                    <a href='/AlreadyPlayed' onClick={closeMenu}><img className='img-icons' src='/playlist.png' alt='my-games' />
+                    <a href='/AlreadyPlayed' onClick={closeMenu}><img className='img-icons' src={`${import.meta.env.BASE_URL}playlist.png`} alt='my-games' />
                         <h4>Пройденные</h4>
                     </a>
 
-                    <a href='/WantToPlay' onClick={closeMenu}><img className='img-icons' src='/heart.png' alt='liked' />
+                    <a href='/WantToPlay' onClick={closeMenu}><img className='img-icons' src={`${import.meta.env.BASE_URL}heart.png`} alt='liked' />
                         <h4>Хочу пройти</h4>
                     </a>
 
-                    <a href='/AboutProject' onClick={closeMenu}><img className='img-icons' src='/info.png' alt='about' />
+                    <a href='/AboutProject' onClick={closeMenu}><img className='img-icons' src={`${import.meta.env.BASE_URL}info.png`} alt='about' />
                         <h4>О проекте</h4>
                     </a>
                 </div>
@@ -74,7 +74,7 @@ export default function Header() {
                 <form action={'/search'} autoComplete='off' method='get'>
                     <input className='text-area' type='search' name='game_name'></input>
                     <button className='search-button' onClick={closeSearch}>
-                        <img className='img-icons-small' src='/search.png' alt='search' />
+                        <img className='img-icons-small' src={`${import.meta.env.BASE_URL}search.png`} alt='search' />
                     </button>
                 </form>
             </search>
