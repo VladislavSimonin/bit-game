@@ -71,7 +71,7 @@ export default function Header() {
 
 
             <search className={`search-section ${isSearchClicked ? 'open' : ''}`}>
-                <form action={'/search'} method='get'>
+                <form action={'/search'} autoComplete='off' method='get'>
                     <input className='text-area' type='search' name='game_name'></input>
                     <button className='search-button' onClick={closeSearch}>
                         <img className='img-icons-small' src='/search.png' alt='search' />

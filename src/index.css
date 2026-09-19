@@ -20,11 +20,19 @@
     font-family: 'science-gothic', sans-serif;
     font-style: normal;
     font-weight: 400;
+
+    /* Убираю голубой фон который появляется при клике на кнопку */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 ul {
     list-style-type: none;
 }
+
+body {
+    background-color: rgb(43, 43, 68);
+}
+
 
 
 
