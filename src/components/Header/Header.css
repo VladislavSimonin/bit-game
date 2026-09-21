@@ -20,20 +20,30 @@ header {
     height: auto;
 }
 
+.img-logo:active {
+    opacity: .5;
+}
 
 .img-icons {
     width: 2.4rem;
     height: auto;
 }
 
+
 .menu-button {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 18px;
+    padding: 15px;
     display: flex;
     align-items: center;
 }
+
+.menu-button:active {
+    background-color: rgba(88, 88, 129, 0.5);
+    border-radius: 20px;
+}
+
 
 .nav-search-button {
     background: none;
@@ -41,8 +51,14 @@ header {
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 18px;
+    padding: 15px;
 }
+
+.nav-search-button:active {
+    background-color: rgba(88, 88, 129, 0.5);
+    border-radius: 20px;
+}
+
 
 /* Элементы выпадающего списка */
 
@@ -91,6 +107,10 @@ header {
     font-style: normal;
     border-bottom: 2px solid #3b3b3b;
     padding: 10% 0;
+}
+
+.menu-section a:active {
+    background-color: rgba(88, 88, 129, 0.5);
 }
 
 

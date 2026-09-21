@@ -39,7 +39,7 @@ export default function Header() {
 
     return (
         <header>
-            <a href='/MainPage'>
+            <a href='/bit-game/MainPage'>
                 <img className='img-logo' src={`${import.meta.env.BASE_URL}android-chrome-192x192.png`} alt='bit-game' />
             </a>
 
