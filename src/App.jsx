@@ -11,7 +11,8 @@ import GamePage from './pages/GamePage/GamePage.jsx'
 export default function App() {
 
   return (
-    <BrowserRouter>
+    <div className='app-container'>
+    <BrowserRouter basename='/bit-game'>
         <Routes>
           {/* Страницы с Header и Footer */}
           <Route element={<Layout />}>
@@ -20,9 +21,11 @@ export default function App() {
               <Route path='/AboutProject' element={<AboutProject />} />
               <Route path='/AlreadyPlayed' element={<AlreadyPlayed />} />
               <Route path='/WantToPlay' element={<WantToPlay />} />
+              <Route path='*' element={<h1>404 - Страница не найдена</h1>} />
           </Route>
         </Routes>
     </BrowserRouter>
+    </div>
   )
 }
 

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import '../Header/Header.css'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
 
@@ -39,9 +40,9 @@ export default function Header() {
 
     return (
         <header>
-            <a href='/bit-game/MainPage'>
+            <Link to='/MainPage'>
                 <img className='img-logo' src={`${import.meta.env.BASE_URL}android-chrome-192x192.png`} alt='bit-game' />
-            </a>
+            </Link>
 
             <nav className='nav-icons'>
                 <button className='menu-button' onClick={toggleMenu}>
@@ -55,17 +56,17 @@ export default function Header() {
             <div className={`menu-overlay ${isMenuClicked ? 'open' : ''}`} onClick={closeMenu}></div>
             <nav className={`dropdown-menu ${isMenuClicked ? 'open' : ''}`}>
                 <div className='menu-section'>
-                    <a href='/bit-game/AlreadyPlayed' onClick={closeMenu}><img className='img-icons' src={`${import.meta.env.BASE_URL}playlist.png`} alt='my-games' />
+                    <Link to='/AlreadyPlayed' onClick={closeMenu}><img className='img-icons' src={`${import.meta.env.BASE_URL}playlist.png`} alt='my-games' />
                         <h4>Пройденные</h4>
-                    </a>
+                    </Link>
 
-                    <a href='/bit-game/WantToPlay' onClick={closeMenu}><img className='img-icons' src={`${import.meta.env.BASE_URL}heart.png`} alt='liked' />
+                    <Link to='/WantToPlay' onClick={closeMenu}><img className='img-icons' src={`${import.meta.env.BASE_URL}heart.png`} alt='liked' />
                         <h4>Хочу пройти</h4>
-                    </a>
+                    </Link>
 
-                    <a href='/bit-game/AboutProject' onClick={closeMenu}><img className='img-icons' src={`${import.meta.env.BASE_URL}info.png`} alt='about' />
+                    <Link to='/AboutProject' onClick={closeMenu}><img className='img-icons' src={`${import.meta.env.BASE_URL}info.png`} alt='about' />
                         <h4>О проекте</h4>
-                    </a>
+                    </Link>
                 </div>
             </nav>
 
