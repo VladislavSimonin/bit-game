@@ -55,15 +55,15 @@ export default function Header() {
             <div className={`menu-overlay ${isMenuClicked ? 'open' : ''}`} onClick={closeMenu}></div>
             <nav className={`dropdown-menu ${isMenuClicked ? 'open' : ''}`}>
                 <div className='menu-section'>
-                    <a href='/AlreadyPlayed' onClick={closeMenu}><img className='img-icons' src={`${import.meta.env.BASE_URL}playlist.png`} alt='my-games' />
+                    <a href='/bit-game/AlreadyPlayed' onClick={closeMenu}><img className='img-icons' src={`${import.meta.env.BASE_URL}playlist.png`} alt='my-games' />
                         <h4>Пройденные</h4>
                     </a>
 
-                    <a href='/WantToPlay' onClick={closeMenu}><img className='img-icons' src={`${import.meta.env.BASE_URL}heart.png`} alt='liked' />
+                    <a href='/bit-game/WantToPlay' onClick={closeMenu}><img className='img-icons' src={`${import.meta.env.BASE_URL}heart.png`} alt='liked' />
                         <h4>Хочу пройти</h4>
                     </a>
 
-                    <a href='/AboutProject' onClick={closeMenu}><img className='img-icons' src={`${import.meta.env.BASE_URL}info.png`} alt='about' />
+                    <a href='/bit-game/AboutProject' onClick={closeMenu}><img className='img-icons' src={`${import.meta.env.BASE_URL}info.png`} alt='about' />
                         <h4>О проекте</h4>
                     </a>
                 </div>

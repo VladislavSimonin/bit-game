@@ -1,0 +1,19 @@
+.site-footer {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    background-color: rgba(101, 101, 148, 0.5);
+    width: 100%;
+}
+
+.social-img {
+    width: auto;
+    height: auto;
+    margin: 20px;
+    padding: 15px;
+}
+
+.social-img:active {
+    opacity: 0.2;
+    border-radius: 20px;
+}

@@ -1,11 +1,9 @@
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
+import '../MainPage/MainPage.css'
 
 export default function MainPage() {
     return (
         <>
-            <Header />
-            <Footer />
+            <h1>Test Text</h1>
         </>
     )
 }
