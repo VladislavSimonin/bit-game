@@ -1,10 +1,11 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Layout from './components/Layout/Layout'
-import MainPage from './components/MainPage/MainPage'
-import AboutProject from './components/AboutProject/AboutProject'
-import AlreadyPlayed from './components/AlreadyPlayed/AlreadyPlayed'
-import WantToPlay from './components/WantToPlay/WantToPlay'
+import Layout from './components/Layout/Layout.jsx'
+import MainPage from './pages/MainPage/MainPage.jsx'
+import AboutProject from './pages/AboutProject/AboutProject.jsx'
+import AlreadyPlayed from './pages/AlreadyPlayed/AlreadyPlayed.jsx'
+import WantToPlay from './pages/WantToPlay/WantToPlay.jsx'
+import GamePage from './pages/GamePage/GamePage.jsx'
 
 
 export default function App() {
@@ -14,11 +15,11 @@ export default function App() {
         <Routes>
           {/* Страницы с Header и Footer */}
           <Route element={<Layout />}>
-              <Route path='/' element={<MainPage />}></Route>
-              <Route path='/GamePage/:id' element={<GamePage />}></Route>
-              <Route path='/AboutProject' element={<AboutProject />}></Route>
-              <Route path='/AlreadyPlayed' element={<AlreadyPlayed />}></Route>
-              <Route path='/WantToPlay' element={<WantToPlay />}></Route>
+              <Route path='/' element={<MainPage />} />
+              <Route path='/GamePage/:id' element={<GamePage />} />
+              <Route path='/AboutProject' element={<AboutProject />} />
+              <Route path='/AlreadyPlayed' element={<AlreadyPlayed />} />
+              <Route path='/WantToPlay' element={<WantToPlay />} />
           </Route>
         </Routes>
     </BrowserRouter>
