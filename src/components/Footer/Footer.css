@@ -1,16 +1,18 @@
 .site-footer {
     display: flex;
-    margin-top: 40px;
+    margin-top: 40px; 
     justify-content: space-around;
     background-color: rgba(101, 101, 148, 0.5);
     width: 100%;
+    outline: 2px solid red; 
+    
 }
 
 .social-img {
     width: auto;
     height: auto;
-    margin: 20px;
-    padding: 15px;
+    margin: 5px;
+    padding: 10px;
 }
 
 .social-img:active {
