@@ -7,6 +7,10 @@
     
 }
 
+.footer-content {
+    margin-top: 1rem;
+}
+
 .social-img {
     width: auto;
     height: auto;
@@ -17,4 +21,13 @@
 .social-img:active {
     opacity: 0.2;
     border-radius: 20px;
+}
+
+.social-icons {
+    width: 50px;
+    height: auto;
+}
+
+.footer-section-bottom {
+    opacity: 0.7;
 }
