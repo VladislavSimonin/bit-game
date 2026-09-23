@@ -1,7 +1,7 @@
 /* Обычный */
 @font-face {
     font-family: 'science-gothic';
-    src: url('src/assets/fonts/Science_Gothic/static/ScienceGothic_Condensed-Regular.woff2') format('woff2');
+    src: url('/fonts/Science_Gothic/static/ScienceGothic_Condensed-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
@@ -9,7 +9,7 @@
 /* Полужирный */
 @font-face {
     font-family: 'science-gothic';
-    src: url('src/assets/fonts/Science_Gothic/static/ScienceGothic_Condensed-SemiBold.woff2') format('woff2');
+    src: url('/fonts/Science_Gothic/static/ScienceGothic_Condensed-SemiBold.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
 }
